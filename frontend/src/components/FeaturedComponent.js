@@ -4,8 +4,6 @@ import '../styles/featuredComponent.css';
 
 const FeaturedComponent = () => {
     const [incomeProof, setIncomeProof] = useState(null);
-    const [planetsData, setPlanetsData] = useState([]);
-    const [numRings, setNumRings] = useState(0);
     const [rings, setRings] = useState([]);
 
     const maxPlanetsPerRing = 4;
@@ -28,12 +26,9 @@ const FeaturedComponent = () => {
                     });
 
                     setIncomeProof(proof);
-                    setPlanetsData(others);
-                    setNumRings(numRings);
                     setRings(rings);
                 } else {
                     setIncomeProof(null);
-                    setPlanetsData([]);
                 }
             })
             .catch(error => {
