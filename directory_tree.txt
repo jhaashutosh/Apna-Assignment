@@ -1,0 +1,38 @@
+.
+├── Readme.md
+├── assignment_data.xlsx
+├── backend
+│   ├── data
+│   │   └── extracted_data.json
+│   ├── package-lock.json
+│   ├── package.json
+│   └── server.js
+├── data_extraction
+│   ├── extract_data.py
+│   └── requirements.txt
+├── directory_tree.txt
+├── frontend
+│   ├── README.md
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── public
+│   │   ├── favicon.ico
+│   │   └── index.html
+│   ├── src
+│   │   ├── App.js
+│   │   ├── App.test.js
+│   │   ├── components
+│   │   │   ├── FeaturedComponent.js
+│   │   │   └── Header.js
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   ├── pages
+│   │   │   └── index.js
+│   │   └── styles
+│   │       ├── featuredComponent.css
+│   │       └── globals.css
+│   └── tailwind.config.js
+└── tailwind.config.js
+
+10 directories, 26 files

@@ -1,4 +1,3 @@
-import './App.css';
 import { Home } from './pages/index'
 import './styles/globals.css'
 import Header from './components/Header';
