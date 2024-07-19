@@ -61,10 +61,12 @@ const FeaturedComponent = () => {
             {rings.map((ring, ringIndex) => (
                 <div
                     key={ringIndex}
-                    className={`absolute h-full flex justify-center items-center ${
+                    className={`absolute h-full w-full flex justify-center items-center ${
                         ringIndex % 2 === 0 ? 'rotate-clockwise' : 'rotate-counterclockwise'
                     }`}
+                    style={{ animationDuration: `${20 + ringIndex * 5}s` }}
                 >
+                    <div className="orbit-ring" style={{ width: `${(ringIndex + 1) * 500}px`, height: `${(ringIndex + 1) * 500}px` }}></div>
                     {ring.map((planet, planetIndex) => {
                         const angle = (360 / ring.length) * planetIndex;
                         const radius = (ringIndex + 1) * 250;
@@ -73,7 +75,7 @@ const FeaturedComponent = () => {
                                 key={planetIndex}
                                 className="h-52 w-52 absolute flex justify-center items-center"
                                 style={{
-                                    transform: `rotate(${angle}deg) translateY(-${radius}px)`,
+                                    transform: `rotate(${angle}deg) translateY(-${radius}px) rotate(-${angle}deg)`,
                                     transformOrigin: 'center',
                                 }}
                             >
