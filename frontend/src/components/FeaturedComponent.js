@@ -39,7 +39,7 @@ const FeaturedComponent = () => {
     const formatDescription = (description) => {
         const lines = description.split('\n');
         return (
-            <div className="text-[#02347D] font-normal text-xs text-center px-4">
+            <div style={{ lineHeight: '0.75rem'}} className="text-[#02347D] font-normal text-xs text-center px-4">
                 <p>{lines[0]}</p>
                 <ul className="list-disc list-inside ml-4">
                     {lines.slice(1).map((line, index) => (
@@ -77,6 +77,7 @@ const FeaturedComponent = () => {
                                 style={{
                                     transform: `rotate(${angle}deg) translateY(-${radius}px) rotate(-${angle}deg)`,
                                     transformOrigin: 'center',
+                                    background: '#fff',
                                 }}
                             >
                                 <div className="planet-container h-52 w-52 flex justify-center items-center">
